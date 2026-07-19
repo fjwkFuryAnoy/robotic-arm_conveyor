@@ -5,12 +5,39 @@ from gpiozero import Button
 
 #-------- SETUP --------
 arm_ip = "192.168.4.1"
-sensor = Button(17)
+sensor_pin = 17
 
-def send_command(cmd_dict):
+sensor=Button(sensor_pin, bounce_time=0.2)
+
+SAFE_LIMITS = {
+    "base":(-3.14,3.14),
+    "shoulder":(-1.57,1.57),
+    "elbow":(0,3.14),
+    "hand":(0,3.14),
+}
+
+busy=False
+
+def is_safe(cmd_dict):
+    for key, value in cmd_dict.items():
+        if key in SAFE_LIMITS:
+            low, high = SAFE_LIMITS[key]
+            if not(low<=value<=high):
+                print(f"UNSAFE VALUE: {key}={value} outside allowed range {SAFE_LIMITS[key]}")
+                return False
+    return True
+
+def send_command(cmd_dict, timeout=3):
+    if not is_safe(cmd_dict):
+        return None
     command = json.dumps(cmd_dict)
     url = f"http://{arm_ip}/js?json={command}"
-    return requests.get(url).text
+    try:
+        response = requests.get(url, timeout=timeout)
+        return response.text
+    except requests.exceptions.RequestException as e:
+        print(f"COMMUNICATION ERROR: {e}")
+        return None
 
 
 #-------- DEFINING BASIC MOVES --------
@@ -92,8 +119,34 @@ def handle_red():
     time.sleep(2.5)       
     pick_reverse()
     time.sleep(1)
-    # go_to_pick()
-    # time.sleep(0.5)
+    go_to_pick()
+    time.sleep(0.5)
+
+def handle_detection():
+    print("Object detected! Flip the object!")
+    pick_motion()
+    time.sleep(1)
+    go_to_pick()
+    time.sleep(0.5)
+    close_gripper()
+    time.sleep(0.5)
+    flip_in_place()
+    time.sleep(2.5)
+    open_gripper()
+    time.sleep(0.5)
+    flip_in_reverse()
+    time.sleep(2.5)       
+    pick_reverse()
+    time.sleep(1)
+    go_to_pick()
+    time.sleep(0.5)
+
+
+def emergency_stop():
+    print("Emergency Stop triggered, Robot ja raha ghar!!!")
+    open_gripper()
+    time.sleep(0.5)
+    go_home()
 
     
 def on_object_detected(colour):
@@ -105,24 +158,30 @@ def on_object_detected(colour):
     else:
         print("Unknown colour, ignoring.")
     
-while True:
-    print("Robot Ghar ja raha hain....")
-    go_home()
-    fake_colour = input("Pretend the camera saw (red/black or quit): ").strip().lower()
-    if fake_colour == "red":
-        on_object_detected(fake_colour)
-    else:
-        print("Exiting....")
-        break
-
-# if __name__ == "__main__":
-#     print("Starting up. Sending arm home first...")
+# while True:
+#     print("Main Ghar ja raha hoon....")
 #     go_home()
-#     time.sleep(2)
+#     fake_colour = input("Pretend the camera saw (red/black or quit): ").strip().lower()
+#     if fake_colour == "red":
+#         on_object_detected(fake_colour)
+#     else:
+#         print("Exiting....")
+#         break
 
-#     print("Waiting for sensor to detect an object...")
-#     while True:
-#         sensor.wait_for_press()
-#         handle_detection()
-#         print("\n Waiting for next object...")
-    
+if __name__ == "__main__":
+    try:
+        print("Starting up. Sending arm home first (one-time only)...")
+        go_home()
+        time.sleep(2)
+
+        print("Moving to pick point and waiting there...")
+        go_to_pick()
+
+        print("Waiting for sensor to detect an object...")
+        while True:
+            sensor.wait_for_press()
+            handle_detection()
+            print("\nBack at pick point. Waiting for next object...")
+    except KeyboardInterrupt:
+        emergency_stop()
+        print("Shutdown Complete")
