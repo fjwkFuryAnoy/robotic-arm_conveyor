@@ -1,0 +1,71 @@
+Home-
+{"T":1051,"x":78.28169107,"y":-1.921707652,"z":125.715751,
+"b":-0.024543693,"s":-1.133611802,"e":2.704408129,"t":3.109379057,
+"torB":0,"torS":0,"torE":0,"torH":0,"torswitchB":0,"torswitchS":0,"torswitchE":0,"torswitchH":0,"v":1219}
+
+Pick - 
+Arm unlocked, you can now move it by hand: null
+{"T":1051,"x":490.2232692,"y":-168.6478844,"z":14.14464987,
+"b":-0.33133985,"s":1.383650671,"e":0.182543714,"t":3.107845076,
+"torB":0,"torS":0,"torE":0,"torH":0,"torswitchB":0,"torswitchS":0,"torswitchE":0,"torswitchH":0,"v":1219}
+
+{"T":1051,"x":483.4499015,"y":-178.8597784,"z":22.03356826,
+"b":-0.354349562,"s":1.287009881,"e":0.332873831,"t":3.09557323,
+"torB":0,"torS":0,"torE":0,"torH":0,"torswitchB":0,"torswitchS":0,"torswitchE":0,"torswitchH":0,"v":1218}
+
+Waypoint 1 - 
+Arm unlocked, you can now move it by hand: null
+{"T":1051,"x":438.5263114,"y":-147.8600439,"z":234.0514897,
+"b":-0.325203927,"s":0.941864204,"e":0.184077695,"t":3.107845076,
+"torB":0,"torS":0,"torE":0,"torH":0,"torswitchB":0,"torswitchS":0,"torswitchE":0,"torswitchH":0,"v":1219}
+
+Waypoint 2 -
+{"T":1051,"x":211.6561865,"y":-74.63486331,"z":467.5246668,
+"b":-0.339009754,"s":0.286854407,"e":0.184077695,"t":3.107845076,
+"torB":0,"torS":0,"torE":0,"torH":0,"torswitchB":0,"torswitchS":0,"torswitchE":0,"torswitchH":0,"v":1218}
+
+Waypoint 3 -
+Arm unlocked, you can now move it by hand: null
+{"T":1051,"x":-8.905918316,"y":3.125080709,"z":518.7633578,
+"b":-0.337475773,"s":-0.134990309,"e":0.102776713,"t":3.107845076,
+"torB":0,"torS":0,"torE":0,"torH":0,"torswitchB":0,"torswitchS":0,"torswitchE":0,"torswitchH":0,"v":1219}
+
+Waypoint 4 - 
+Arm unlocked, you can now move it by hand: null
+{"T":1051,"x":250.0378916,"y":109.0034634,"z":441.3658354,
+"b":-2.730485802,"s":-0.670349604,"e":0.102776713,"t":3.107845076,
+"torB":0,"torS":0,"torE":0,"torH":0,"torswitchB":0,"torswitchS":0,"torswitchE":0,"torswitchH":0,"v":1219}
+
+Waypoint 5 - 
+Arm unlocked, you can now move it by hand: null
+{"T":1051,"x":473.0550143,"y":200.2102364,"z":50.79193724,
+"b":-2.741223668,"s":-1.487961364,"e":-0.084368943,"t":3.107845076,
+"torB":0,"torS":0,"torE":0,"torH":0,"torswitchB":0,"torswitchS":0,"torswitchE":0,"torswitchH":0,"v":1218}
+
+Waypoint 6 - 
+Arm unlocked, you can now move it by hand: null
+{"T":1051,"x":486.4655572,"y":169.0260076,"z":-53.03627396,
+"b":-2.807184842,"s":-1.727262367,"e":-0.013805827,"t":2.537204223,
+"torB":0,"torS":0,"torE":0,"torH":0,"torswitchB":0,"torswitchS":0,"torswitchE":0,"torswitchH":0,"v":1219}
+
+Pick_point 1:
+Arm unlocked, you can now move it by hand: null
+{"T":1051,"x":73.65581629,"y":-9.314076815,"z":512.8640871,
+"b":-0.125786425,"s":-0.036815539,"e":0.220893233,"t":3.11551498,
+"torB":0,"torS":0,"torE":0,"torH":0,"torswitchB":0,"torswitchS":0,"torswitchE":0,"torswitchH":0,"v":1218}
+
+Pick_point 2:
+Arm unlocked, you can now move it by hand: null
+{"T":1051,"x":490.1711158,"y":-166.9499041,"z":17.14926426,
+"b":-0.328271889,"s":1.352971055,"e":0.228563137,"t":3.11551498,
+"torB":0,"torS":0,"torE":0,"torH":0,"torswitchB":0,"torswitchS":0,"torswitchE":0,"torswitchH":0,"v":1219}
+
+Gripper open - 
+{"T":1051,"x":485.9090727,"y":173.8610463,"z":-37.51165356,
+"b":-2.797980957,"s":-1.688912847,"e":-0.029145635,"t":2.402213914,
+"torB":0,"torS":0,"torE":0,"torH":0,"torswitchB":0,"torswitchS":0,"torswitchE":0,"torswitchH":0,"v":1218}
+
+Gripper Close -
+{"T":1051,"x":502.021499,"y":-129.0285586,"z":0.618402774,
+"b":-0.251572849,"s":1.492563307,"e":0.029145635,"t":3.109379057,
+"torB":0,"torS":0,"torE":0,"torH":0,"torswitchB":0,"torswitchS":0,"torswitchE":0,"torswitchH":0,"v":1219}
