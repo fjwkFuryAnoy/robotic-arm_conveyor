@@ -13,6 +13,11 @@ Arm unlocked, you can now move it by hand: null
 "b":-0.354349562,"s":1.287009881,"e":0.332873831,"t":3.09557323,
 "torB":0,"torS":0,"torE":0,"torH":0,"torswitchB":0,"torswitchS":0,"torswitchE":0,"torswitchH":0,"v":1218}
 
+Arm unlocked, you can now move it by hand: null
+{"T":1051,"x":480.6875917,"y":-173.6581372,"z":11.24830994,
+"b":-0.346679658,"s":1.236388515,"e":0.464796179,"t":3.106311095,
+"torB":0,"torS":0,"torE":0,"torH":0,"torswitchB":0,"torswitchS":0,"torswitchE":0,"torswitchH":0,"v":1219}
+
 Waypoint 1 - 
 Arm unlocked, you can now move it by hand: null
 {"T":1051,"x":438.5263114,"y":-147.8600439,"z":234.0514897,
@@ -69,3 +74,9 @@ Gripper Close -
 {"T":1051,"x":502.021499,"y":-129.0285586,"z":0.618402774,
 "b":-0.251572849,"s":1.492563307,"e":0.029145635,"t":3.109379057,
 "torB":0,"torS":0,"torE":0,"torH":0,"torswitchB":0,"torswitchS":0,"torswitchE":0,"torswitchH":0,"v":1219}
+
+Drop - 
+Arm unlocked, you can now move it by hand: null
+{"T":1051,"x":480.0223001,"y":153.6924303,"z":-54.18830356,
+"b":-2.831728534,"s":-1.570796327,"e":-0.3113981,"t":3.107845076,
+"torB":0,"torS":0,"torE":0,"torH":0,"torswitchB":0,"torswitchS":0,"torswitchE":0,"torswitchH":0,"v":1218}
