@@ -1,0 +1,11 @@
+Pick - 
+Arm unlocked, you can now move it by hand: null
+{"T":1051,"x":493.3949754,"y":-152.9819519,"z":3.560607662,
+"b":-0.300660234,"s":1.336097266,"e":0.308330138,"t":3.081767403,
+"torB":0,"torS":0,"torE":0,"torH":0,"torswitchB":0,"torswitchS":0,"torswitchE":0,"torswitchH":0,"v":1218}
+
+Put - 
+Arm unlocked, you can now move it by hand: null
+{"T":1051,"x":483.7267274,"y":186.5939892,"z":2.021957308,
+"b":-2.773437264,"s":-1.57,"e":0.0,"t":3.14,
+"torB":0,"torS":0,"torE":0,"torH":0,"torswitchB":0,"torswitchS":0,"torswitchE":0,"torswitchH":0,"v":1218}
